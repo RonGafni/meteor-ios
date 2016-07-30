@@ -344,7 +344,7 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
   }];
   _methodInvocationCoordinator.suspended = NO;
   
-  [_database reset];
+  //[_database reset];
   
   [_subscriptionManager reviveReadySubscriptionsAfterReconnect];
 }
