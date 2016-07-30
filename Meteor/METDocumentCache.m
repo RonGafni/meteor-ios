@@ -119,7 +119,7 @@
 
 - (BOOL)removeDocumentWithKey:(METDocumentKey *)documentKey {
   NSParameterAssert(documentKey);
-  /*
+  
   __block BOOL result = NO;
   dispatch_barrier_sync(_queue, ^{
     METDocument *existingDocument = [self loadDocumentWithKey:documentKey];
@@ -134,7 +134,7 @@
     [_delegate documentCache:self didChangeDocumentWithKey:documentKey fieldsAfterChanges:nil];
     result = YES;
   });
-   */
+   
   return NO;
 }
 
